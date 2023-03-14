@@ -1,0 +1,59 @@
+runmode 
+	reference     3 3.586259 -30.400174 
+	mass 3 1000 0.15 mass.fits 
+	ampli   2 1000 1 mag_1.fits
+	end
+grille 
+       	nombre      128 
+       	polaire     0 
+       	nlentille   258 
+       	end
+potentiel O1
+        profil       12
+        x_centre     0.0000
+        y_centre     0.0000
+        ellipticite     0.24
+        angle_pos       15.
+        c    2.5
+        masse  251188643150958.22
+        z_lens     0.15
+        end
+potfile
+        filein  1 potfile.dat
+        type    81
+        corekpc 0.15
+        mag0    19.44
+        sigma   0 155. 200.
+        cutkpc  0 13. 50.
+        zlens   0.15
+        end
+cline
+        nplan    1 2.
+        dmax     400.000000
+        algorithm   MARCHINGSQUARES
+        limitHigh   3.0
+        limitLow   1.000000
+        end
+grande
+        iso         0 0 0.000000 0.000000 0.000000
+        name        best
+        profil      0 0
+        contour     1 0
+        large_dist  0.300000
+        end
+cosmologie
+        model       1
+        H0        70.000000
+        omegaM    0.300000
+        omegaX    0.700000
+        omegaK    0.
+        wX        -1.000000
+        wa        0.000000
+        end
+champ
+        xmin     -600.000000
+        xmax     600.000000
+        ymin     -600.000000
+        ymax     600.000000
+        end
+fini
